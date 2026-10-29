@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopEasy - Products</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">ShopEasy</a>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <input id="search" type="search" placeholder="Search products...">
+      <select id="category"><option value="">All categories</option></select>
+      <select id="sort">
+        <option value="newest">Newest</option>
+        <option value="price_asc">Price: low to high</option>
+        <option value="price_desc">Price: high to low</option>
+        <option value="name_asc">Name: A to Z</option>
+        <option value="name_desc">Name: Z to A</option>
+      </select>
+    </section>
+
+    <p id="status" class="status" aria-live="polite"></p>
+    <section id="grid" class="grid"></section>
+    <nav id="pager" class="pager"></nav>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/products.js"></script>
+</body>
+</html>
